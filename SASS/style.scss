@@ -65,3 +65,61 @@
     list-style: none;
     float: right;
   }
+.firstpage {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+}
+.topic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+.topic2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 30%;
+}
+.theme {
+    width: 518px;
+    height: 60px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+   letter-spacing: -0.423077px;
+    color: #4A4FF2;
+}
+.text1 {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: #111111;
+    }
+    .text2 {
+        font-family: 'Mulish';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+        }
+        .text3 {
+            font-family: 'Mulish';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+            mix-blend-mode: normal;
+            opacity: 0.6;
+            margin-bottom: 50px;
+            margin-top: 10px;
+            }
