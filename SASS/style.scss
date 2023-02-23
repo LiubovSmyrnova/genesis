@@ -1,0 +1,67 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    height: 100%;
+} 
+.flex10 {
+    display: flex;
+    width: 20vw;
+    background: #ffffff;
+  }
+  .flex80 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 60vw;
+    background: #ffffff;
+  }
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background: #ffffff;
+    width: 100%;
+    height: 78px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+      left: 143.92px;
+    top: 22px;
+}
+    .navbars {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            height: 28px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: -0.346154px;
+    color: #111111;
+}
+.linavbars {
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+    float: right;
+  }
