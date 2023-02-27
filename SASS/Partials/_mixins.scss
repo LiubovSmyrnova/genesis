@@ -1,0 +1,20 @@
+@mixin font {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+}
+@mixin fontita {
+    font-family: 'Mulish';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: $blackcolor;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+@mixin fontsmall {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+}

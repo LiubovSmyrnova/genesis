@@ -1,0 +1,21 @@
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+    height: 100%;
+  }
+  .flex10 {
+    display: flex;
+    width: 30%;
+    background: #ffffff;
+  }
+  .flex80 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 80vw;
+    background: #ffffff;
+  }

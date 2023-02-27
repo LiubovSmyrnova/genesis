@@ -4,74 +4,14 @@ $blackcolor: #111111;
     padding: 0px;
     margin: 0px;
 }
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    height: 100%;
-  }
-  .flex10 {
-    display: flex;
-    width: 30%;
-    background: #ffffff;
-  }
-  .flex80 {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    width: 80vw;
-    background: #ffffff;
-  }
-  .navigation {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      align-items: center;
-      align-content: center;
-      background: #ffffff;
-      width: 100%;
-      height: 78px;
-      margin-top: 20px;
-      margin-bottom: 100px;
-  }
-  .logo {
-  
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: center;
-        left: 143.92px;
-      top: 22px;
-  }
-  .navbars {
-      display: flex;
-      flex-wrap: wrap;
-      align-content: center;
-      align-items: center;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      height: 28px;
-  }
-  .linavbars {
-    margin: 20px;
-    padding: 0;
-    list-style: none;
-    float: left;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-     letter-spacing: -0.346154px;
-    color: #111111;
-  }
+@import "partials/base";
+
+ @import "partials/navigation";
+ 
+ @import "partials/mixins";
+
+ @import "partials/footer";
+
   
   .grid__container {
     display: grid;
@@ -158,39 +98,26 @@ $blackcolor: #111111;
 .theme {
     width: 518px;
     height: 60px;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
+    @include font;
     font-size: 24px;
     line-height: 28px;
    letter-spacing: -0.423077px;
     color: #4A4FF2;
 }
 .text1 {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
+    @include font;
     font-size: 40px;
     line-height: 60px;
     color: #111111;
     }
     .text2 {
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 700;
+        @include font;
         font-size: 40px;
         line-height: 60px;
         color: #4A4FF2;
         }
         .text3 {
-            font-family: 'Mulish';
-            font-style: italic;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 23px;
-            color: $blackcolor;
-            mix-blend-mode: normal;
-            opacity: 0.6;
+            @include fontita;
             margin-bottom: 50px;
             margin-top: 10px;
             }
@@ -211,12 +138,10 @@ $blackcolor: #111111;
   .column1 p {
     flex: 1;
     text-align: left;
-    font-family: 'Mulish';
-font-style: normal;
-font-weight: 700;
-font-size: 28px;
-line-height: 38px;
-color: #111111;
+    @include font;
+    font-size: 28px;
+    line-height: 38px;
+    color: #111111;
   }
   .column2 {
     flex: 1;
@@ -225,14 +150,12 @@ color: #111111;
   .column2 p {
     flex: 1;
     text-align: left;
-    font-family: 'Mulish';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-color: #111111;
-mix-blend-mode: normal;
-opacity: 0.6;
+    @include fontsmall;
+    font-size: 18px;
+    line-height: 23px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.6;
   }
   .tablehome {
     display: grid;
@@ -253,64 +176,50 @@ opacity: 0.6;
     .div88 { grid-area: 9 / 7 / 17 / 8; }
 
 .div11 p {
-text-align: left;
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 700;
-font-size: 22px;
-line-height: 28px;
-color: #111111;
+    text-align: left;
+    @include font;
+    font-size: 22px;
+    line-height: 28px;
+    color: #111111;
 }
 .div22 p{
     text-align: center;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
+    @include font;
     font-size: 18px;
     line-height: 23px;
     color: #111111;
 }
 .div33 p{
     text-align: center;
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
+    @include font;
     font-size: 18px;
     line-height: 23px;
     color: #111111;
 }
 .usualtext {
-font-family: 'Mulish';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
-color: #111111;
-text-align: left;
-margin-bottom: 10px;
+    @include fontsmall;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+    text-align: left;
+    margin-bottom: 10px;
 }
 .year {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 400;
+    @include fontsmall;
     font-size: 16px;
     line-height: 20px;
     color: #111111;
     text-align: right;
     }
 .opacitytext {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 400;
+    @include fontsmall;
     font-size: 16px;
     line-height: 26px;
     color: #111111;
     mix-blend-mode: normal;
     opacity: 0.6;
     }
-    .icons {
-        margin-left: 24px;
-    }
+    
     .href {
         text-decoration: none;
         }
@@ -355,9 +264,7 @@ margin-bottom: 10px;
     }
     
     .input-name::placeholder {
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 700;
+        @include font;
         font-size: 16px;
         line-height: 20px;
         color: #111111;
@@ -420,18 +327,14 @@ margin-bottom: 10px;
         width: 35%;
     }
     .newtitle {
-        font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 55px;
-    color: #111111;
-    margin-bottom: 40px;
+        @include font;
+        font-size: 40px;
+        line-height: 55px;
+        color: #111111;
+        margin-bottom: 40px;
     }
     .text4{
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
+        @include fontsmall;
         font-size: 16px;
         line-height: 26px;
         color: #111111;
@@ -459,9 +362,7 @@ margin-bottom: 10px;
         margin-right: 0px;
       }
       .grid-column1 p {
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 700;
+        @include font;
         font-size: 18px;
         line-height: 23px;
         color: #111111;
@@ -474,9 +375,7 @@ margin-bottom: 10px;
         text-align: left;
       }
       .grid-column2 p {
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 700;
+        @include font;
         font-size: 18px;
         line-height: 23px;
         color: #111111;
@@ -502,16 +401,4 @@ margin-bottom: 10px;
         justify-content: space-between;
         align-items: center;
     }
-    .footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        background: #ffffff;
-        width: 100%;
-        height: 78px;
-        margin-bottom: 100px;
-            margin-top: 120px;
-    }
+   
